@@ -110,6 +110,15 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-left: auto;
 }
 
 nav a {
@@ -477,6 +486,10 @@ nav a.active {
   .card {
     min-height: auto;
   }
+  
+  .contlols {
+    
+  }
 }
 
 @media (max-width: 576px) {
@@ -496,4 +509,15 @@ nav a.active {
   }
 }
 
+@media (max-width: 320px) {
+  .nav-inner {
+    align-items: center;
+    justify-content: center;
+  }
 
+  .controls {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
