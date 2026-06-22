@@ -420,38 +420,6 @@ nav a.active {
   margin: 0.7rem 0;
 }
 
-@media (max-width: 850px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 5.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .navbar {
-    padding: 1rem 1rem;
-  }
-
-  .nav-inner {
-    justify-content: center;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-  }
-
-  .controls {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .container {
-    padding: 1.8rem 1rem;
-  }
-}
 
 @keyframes fadeInUp {
   from {
@@ -472,6 +440,59 @@ nav a.active {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .projects .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar,
+  .hero,
+  .projects,
+  .about,
+  .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
